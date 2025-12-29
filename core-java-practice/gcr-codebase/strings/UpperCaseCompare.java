@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class UpperCaseCompare{
     static String toUpperUsingCharAt(String s){
         String r="";

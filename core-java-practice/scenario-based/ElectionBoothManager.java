@@ -1,4 +1,3 @@
-package com.scenariobased;
 import java.util.Scanner;
 
 public class ElectionBoothManager {
