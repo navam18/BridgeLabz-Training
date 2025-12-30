@@ -4,9 +4,9 @@ public class BMIFitnessTracker {
         return weight / (height * height);
     }
     public static String getBMICategory(double bmi) {
-        if (bmi < 18.5) {
+        if (bmi<18.5) {
             return "Underweight";
-        } else if (bmi < 25) {
+        } else if (bmi<25) {
             return "Normal";
         } else {
             return "Overweight";

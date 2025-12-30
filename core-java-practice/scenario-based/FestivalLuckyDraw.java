@@ -18,7 +18,7 @@ class FestivalLuckyDraw {
             }
 
             if(num%3==0 && num%5==0){
-                System.out.println("Congratulations! You won a gift 🎁");
+                System.out.println("Congratulations! You won a gift");
             }
             else{
                 System.out.println("Better luck next time");
