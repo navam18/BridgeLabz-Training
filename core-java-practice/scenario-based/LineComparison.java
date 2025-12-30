@@ -13,7 +13,7 @@ public class LineComparison {
 
         Scanner sc = new Scanner(System.in);
 
-        // ********** UC1: MODEL A LINE & CALCULATE LENGTH **********
+        //UC1: MODEL A LINE & CALCULATE LENGTH
         System.out.println("UC1: Enter coordinates for Line 1");
 
         System.out.print("Enter x1: ");
@@ -28,7 +28,7 @@ public class LineComparison {
         double line1Length = calculateLength(x1, y1, x2, y2);
         System.out.println("Length of Line 1 = " + line1Length + "\n");
 
-        // ********** UC2: CHECK EQUALITY OF TWO LINES **********
+        //UC2: CHECK EQUALITY OF TWO LINES
         System.out.println("UC2: Enter coordinates for Line 2");
 
         System.out.print("Enter x1: ");
@@ -51,7 +51,7 @@ public class LineComparison {
             System.out.println("Lines are NOT equal in length.\n");
         }
 
-        // ********** UC3: COMPARE TWO LINES **********
+        //UC3: COMPARE TWO LINES
         System.out.println("UC3: Comparing two lines using compareTo()...");
 
         int comparison = Double.valueOf(line1Length).compareTo(line2Length);
@@ -63,7 +63,5 @@ public class LineComparison {
         } else {
             System.out.println("Line 1 is LESS than Line 2");
         }
-
-        sc.close();
     }
 }
