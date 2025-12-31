@@ -1,4 +1,4 @@
-public class BankAccProg {
+public class BankAccount {
     String accountHolder;
     String accountNumber;
     double balance;
@@ -20,7 +20,7 @@ public class BankAccProg {
         System.out.println("Current balance: " + balance);
     }
     public static void main(String[] args) {
-        BankAccProg acc = new BankAccProg();
+        BankAccount acc = new BankAccount();
         acc.accountHolder = "State of Chennai";
         acc.accountNumber = "ACC001";
         acc.balance = 700;
