@@ -1,10 +1,10 @@
-class Book{
+class LibraryBook{
     String title;
     String author;
     double price;
     boolean availability;
 
-    Book(String title,String author,double price,boolean availability){
+    LibraryBook(String title,String author,double price,boolean availability){
         this.title=title;
         this.author=author;
         this.price=price;
@@ -18,7 +18,7 @@ class Book{
     }
 
     public static void main(String[] args){
-        Book b1=new Book("Java Basics","Herbert Schildt",450.0,true);
+        LibraryBook b1=new LibraryBook("Java Basics","Herbert Schildt",450.0,true);
         b1.borrowBook();
         System.out.println("Is the book available? " + b1.availability);
     }
