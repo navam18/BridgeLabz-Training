@@ -1,5 +1,3 @@
-package linkedList;
-
 class BookNode {
     String title;
     String author;

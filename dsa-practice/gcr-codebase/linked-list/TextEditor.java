@@ -1,5 +1,3 @@
-package linkedList;
-
 class TextStateNode {
     String text;
     TextStateNode prev, next;

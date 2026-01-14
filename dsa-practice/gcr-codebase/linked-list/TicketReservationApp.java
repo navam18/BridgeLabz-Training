@@ -1,5 +1,3 @@
-package linkedList;
-
 class TicketNode {
     int ticketId;
     String customerName;

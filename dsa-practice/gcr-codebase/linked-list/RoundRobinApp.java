@@ -1,5 +1,3 @@
-package linkedList;
-
 class ProcessNode {
     int pid;
     int burstTime;
