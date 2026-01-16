@@ -1,4 +1,3 @@
-package leetcode;
 import java.util.*;
 class FirstOccurrenceOfString{
     //method to find first occurrence of needle in haystack

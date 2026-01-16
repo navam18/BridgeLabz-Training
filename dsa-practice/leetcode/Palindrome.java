@@ -1,4 +1,3 @@
-package leetcode;
 import java.util.*;
 class Palindrome{
     //method to check if integer is palindrome
