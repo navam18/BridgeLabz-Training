@@ -40,12 +40,54 @@ BridgeLabz-Training/
 |   |   +-- programming-elements/
 |   |   |
 |   |   +-- control-flow/
-|   |
+|   |   |
+|   |   +-- arrays/
+|   |   |
+|   |   +-- strings/
+|   |   |
+|   |   +-- methods/
+|   |   |
+|   |   +--extras/
 |   +-- leet-code-codebase/
 |   |
 |   +-- scenario-based/
 |
-+-- README.md
++-- oops-practice/(Branch & Folder Name)
+|   |
+|   +-- gcr-codebase/
+|   |   |
+|   |   +-- class-and-object/
+|   |   |
+|   |   +-- constructor-and-varaibles/
+|   |   |
+|   |   +-- inheritance/
+|   |   |
+|   |   +-- static-final-instanceOf/
+|   |   |
+|   |   +-- encapsulation-polymorphism-interface-abstract/
+|   |   |
+|   |   +-- uml-diagram/
+|   |   |
+|   |   +-- 
+|   +-- leetcode-codebase/
+|   |
+|   +-- scenario-based/
+|
++-- dsa-practice/(Branch & Folder Name)
+|   |
+|   +-- gcr-codebase/
+|   |   |
+|   |   +-- linked-list/
+|   |   |
+|   |   +-- hashmaps/
+|   |   |
+|   |   +-- stack-and-queue/
+|   |   |
+|   |   +-- sorting/
+|   |   
+|   +-- leetcode/
+|
++-- Readme.md
 ```
 
 ---
@@ -79,6 +121,94 @@ BridgeLabz-Training/
 - Completed Level 1, Level 2, and Level 3 Control Flow problems
 
 ---
+
+---
+
+### 22-Dec-2025 (Monday)[Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/strings)
+
+- Completed Level 1, Level 2, and Level 3 Strings problems
+
+---
+
+### 23-Dec-2025 (Tuesday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/strings)
+
+- Completed Level 2 & Level 3 – String Problems
+
+### 24-Dec-2025 (Wednesday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
+
+- Completed Level 1 – Java Methods
+
+### 25-Dec-2025 (Thursday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
+
+- Completed Level 2 & Level 3 – Java Methods
+
+### 26-Dec-2025 (Friday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras)
+
+- Completed Practice Assignment – String
+
+### 27-Dec-2025 (Saturday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras)
+
+- Completed EXTRAS – Built-In Function Practice Problem
+
+### 28-Dec-2025 (Sunday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras)
+
+- Completed EXTRAS – Built-In Function Practice Problem
+
+### 29-Dec-2025 (Monday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)
+
+- Completed Scenario Based
+
+### 30-Dec-2025 (Tuesday)
+- Continuing with OOPs Concept
+- Completed Class and Object Assignment [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-and-object)
+
+### 31-Dec-2025 (Wednesday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructor-and-variables)
+- Completed Java Constructors, Instance vs. Class Variables, Access Modifiers Level 1
+
+### 01-Jan-2026 (Thursday)
+- Completed this, static, final keywords and instanceof operator Level 1 [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/static-final-instanceOf)
+
+### 02-Jan-2026 (Friday) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/uml-diagram)
+- Completed Object-Oriented Design Principles UML Diagrams
+- Solved Scenario Based [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 03-Jan-2026 (Saturday)
+- Completed Inheritance Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/inheritance)
+- Solved Scenario Based [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 05-Jan-2026 (Monday)
+- Completed Encapsulation, Polymorphism, Interface and Abstract Class Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/encapsulation-polymorphism-interface-abstract)
+- Solved Scenario Based Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 06-Jan-2026 (Tuesday)
+- Solved Scenario Based Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+- - Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/leet-code-codebase)
+
+### 07-Jan-2026 (Wednesday)
+- Solved Scenario Based Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 08-Jan-2026 (Thursday)
+- Solved DSA Practice Problems (LinkedList) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linked-list)
+
+### 09-Jan-2026 (Friday)
+- Solved OOPs Scenario Based Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 12-Jan-2026 (Monday)
+- Solved OOPs Scenario Based Practice Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+
+### 13-Jan-2026 (Tuesday)
+- Solved DSA Practice Problems (Stack & Queue) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-and-queue)
+
+### 14-Jan-2026 (Wednesday)
+- Solved DSA Practice Problems (HashMap) [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmaps)
+- Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
+
+### 15-Jan-2026 (Thursday)
+- Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
+
+### 16-Jan-2026 (Friday)
+ - Solved Sorting Algorithm Questions [Click here for reference]()
+ - Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
 
 ## Author
 
