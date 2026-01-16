@@ -207,7 +207,7 @@ BridgeLabz-Training/
 - Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
 
 ### 16-Jan-2026 (Friday)
- - Solved Sorting Algorithm Questions [Click here for reference]()
+ - Solved Sorting Algorithm Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting)
  - Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
 
 ## Author
