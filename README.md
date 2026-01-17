@@ -84,7 +84,10 @@ BridgeLabz-Training/
 |   |   +-- stack-and-queue/
 |   |   |
 |   |   +-- sorting/
-|   |   
+|   |   |
+|   |   +-- searching/
+|   |   |
+|   |   +-- bufferedReader/
 |   +-- leetcode/
 |
 +-- Readme.md
@@ -209,6 +212,10 @@ BridgeLabz-Training/
 ### 16-Jan-2026 (Friday)
  - Solved Sorting Algorithm Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting)
  - Solved LeetCode Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leetcode)
+
+### 17-Jan-2026 (Saturday)
+- Solved Searching Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/searching)
+- Solved BufferedReader,FileReader,InputStreamReader Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/bufferedReader)
 
 ## Author
 
