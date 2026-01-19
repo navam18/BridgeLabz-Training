@@ -21,10 +21,13 @@ Each section highlights the learning objectives and tasks completed on specific 
 
 ## Branch Information
 
-| Branch Name          | Purpose                                                                       |
-| -------------------- | ----------------------------------------------------------------------------- |
-| `main`               | Contains the main README and consolidated documentation                       |
-| `core-java-practice` | Contains Java practice programs, control flow problems, and daily assignments |
+| Branch Name             | Purpose                                                                       |
+|-------------------------|-------------------------------------------------------------------------------|
+| `main`                  | Contains the main README and consolidated documentation                       |
+| `core-java-practice`    | Contains Java practice programs, control flow problems, and daily assignments |
+| `dsa-practice`          | Contains Data Structures and Algorithms practice problems                     |
+| `oops-practice`         | Contains Object-Oriented Programming practice programs                        |
+
 
 ---
 
@@ -55,6 +58,8 @@ BridgeLabz-Training/
 +-- oops-practice/(Branch & Folder Name)
 |   |
 |   +-- gcr-codebase/
+|   |   |
+|   |   +-- addressBook/
 |   |   |
 |   |   +-- class-and-object/
 |   |   |
@@ -89,6 +94,8 @@ BridgeLabz-Training/
 |   |   |
 |   |   +-- bufferedReader/
 |   +-- leetcode/
+|   |
+|   +-- scenario-based/
 |
 +-- Readme.md
 ```
@@ -217,6 +224,11 @@ BridgeLabz-Training/
 - Solved Searching Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/searching)
 - Solved BufferedReader,FileReader,InputStreamReader Questions [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/bufferedReader)
 
+### 19-Jan-2026 (Monday)
+- Solved AddressBook Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/addressBook)
+- Solved OOPs Scenario Based Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
+- Solved DSA Scenario Based Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based)
+- 
 ## Author
 
 **Navam Srivastava**  
