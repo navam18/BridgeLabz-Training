@@ -93,6 +93,8 @@ BridgeLabz-Training/
 |   |   +-- searching/
 |   |   |
 |   |   +-- bufferedReader/
+|   |   |
+|   |   +-- runtime-analysis/
 |   +-- leetcode/
 |   |
 |   +-- scenario-based/
@@ -228,6 +230,10 @@ BridgeLabz-Training/
 - Solved AddressBook Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/addressBook)
 - Solved OOPs Scenario Based Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based)
 - Solved DSA Scenario Based Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based)
+
+### 20-Jan-2026 (Tuesday)
+- Solved Review Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/review/review)
+- Solved  Runtime-Analysis Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/runtime-analysis)
   
 ## Author
 
