@@ -251,7 +251,7 @@ BridgeLabz-Training/
 
  ### 21-Jan-2026 (Wednesday)
  - Solved Generics Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/Generics)
-- Solved Leetcode Problem [Click here for reference]()
+- Solved Leetcode Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/leetcode)
     
 ## Author
 
