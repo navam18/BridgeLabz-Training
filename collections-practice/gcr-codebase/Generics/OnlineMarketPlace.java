@@ -1,5 +1,4 @@
 package generics;
-
 abstract class Category {
 
     private String name;

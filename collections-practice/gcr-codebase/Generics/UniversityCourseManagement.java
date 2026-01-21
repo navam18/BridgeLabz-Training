@@ -1,3 +1,4 @@
+package generics;
 import java.util.*;
 abstract class CourseType {
     abstract String getEvaluationType();
