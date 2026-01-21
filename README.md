@@ -21,13 +21,13 @@ Each section highlights the learning objectives and tasks completed on specific 
 
 ## Branch Information
 
-| Branch Name             | Purpose                                                                       |
-|-------------------------|-------------------------------------------------------------------------------|
-| `main`                  | Contains the main README and consolidated documentation                       |
-| `core-java-practice`    | Contains Java practice programs, control flow problems, and daily assignments |
-| `dsa-practice`          | Contains Data Structures and Algorithms practice problems                     |
-| `oops-practice`         | Contains Object-Oriented Programming practice programs                        |
-
+| Branch Name            | Purpose                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| `main`                 | Contains the main README and consolidated documentation                             |
+| `core-java-practice`   | Contains Java practice programs, control flow problems, and daily assignments       |
+| `dsa-practice`         | Contains Data Structures and Algorithms practice problems                           |
+| `oops-practice`        | Contains Object-Oriented Programming practice programs                              |
+| `collections-practice` | Contains Java Collections Framework practice programs (List, Set, Map, Queue, etc.) |
 
 ---
 
@@ -99,6 +99,19 @@ BridgeLabz-Training/
 |   |
 |   +-- scenario-based/
 |
++-- collections-practice/(Branch & Folder Name)
+|   |
+|   +-- gcr-codebase/
+|   |   |
+|   |   +-- generics/
+|   |   |
+|   |   +-- collections/
+|   |   |
+|   |   +--
+|   |   |
+|   +-- scenario-based/
+|   |
+|   +-- leetcode/
 +-- Readme.md
 ```
 
@@ -234,7 +247,12 @@ BridgeLabz-Training/
 ### 20-Jan-2026 (Tuesday)
 - Solved Review Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/review/review)
 - Solved  Runtime-Analysis Problems [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/runtime-analysis)
-  
+- Solved Scenario Based Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based)
+
+ ### 21-Jan-2026 (Wednesday)
+ - Solved Generics Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/Generics)
+- Solved Leetcode Problem [Click here for reference]()
+    
 ## Author
 
 **Navam Srivastava**  
