@@ -107,8 +107,10 @@ BridgeLabz-Training/
 |   |   |
 |   |   +-- collections/
 |   |   |
-|   |   +--
+|   |   +-- exceptions/
 |   |   |
+|   |   +-- streams/
+|   |
 |   +-- scenario-based/
 |   |
 |   +-- leetcode/
@@ -252,6 +254,12 @@ BridgeLabz-Training/
  ### 21-Jan-2026 (Wednesday)
  - Solved Generics Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/Generics)
 - Solved Leetcode Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/leetcode)
+
+### 22-Jan-2026 (Thursday)
+ - Solved Collections Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections)
+
+### 26-Jan-2026 (Monday)
+ - Solved Exception Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions)
     
 ## Author
 
