@@ -259,6 +259,9 @@ BridgeLabz-Training/
  - Solved Collections Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections)
 
 ### 26-Jan-2026 (Monday)
+ - Solved Streams Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/streams)
+
+### 27-Jan-2026 (Tuesday)
  - Solved Exception Problem [Click here for reference](https://github.com/navam18/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions)
     
 ## Author
