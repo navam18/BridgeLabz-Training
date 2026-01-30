@@ -1,4 +1,4 @@
-package interfaces;
+package collections;
 import java.util.*;
 
 public class FrequencyOfElements {

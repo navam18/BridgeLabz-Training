@@ -1,4 +1,4 @@
-package interfaces;
+package collections;
 
 class CircularBuffer {
     int[] arr;
