@@ -46,7 +46,7 @@ class VesselUtil{
     }
 
     public Vessel getVesselById(String vesselId){
-        for(Vessel v : vesselList){
+        for(Vessel v: vesselList){
             String id = v.getVesselId();
             if(id.equals(vesselId)){
                 return v;
