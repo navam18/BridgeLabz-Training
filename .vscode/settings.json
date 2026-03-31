@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        ".",
+        "java8-programming-practice\\gcr-codebase\\streamApi"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\LENOVO\\Downloads\\json-20240303.jar"
+    ]
+}
