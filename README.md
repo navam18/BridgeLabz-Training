@@ -89,3 +89,54 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 3 | 05-08-2026
+
+#### 📚 Topics Covered
+
+* SQL Joins
+  * INNER JOIN
+  * LEFT JOIN
+  * RIGHT JOIN
+  * FULL OUTER JOIN (MySQL Simulation)
+  * SELF JOIN
+  * CROSS JOIN
+  * Multiple Table JOIN
+* Stored Procedures
+  * Introduction to Stored Procedures
+  * Creating Procedures
+  * Calling Procedures
+  * IN Parameters
+  * OUT Parameters
+  * INOUT Parameters
+  * Error Handling using Handlers
+* Triggers
+  * BEFORE INSERT
+  * AFTER INSERT
+  * BEFORE UPDATE
+  * AFTER UPDATE
+  * BEFORE DELETE
+  * AFTER DELETE
+
+#### 💻 Practical Work
+
+* Executed all types of SQL JOIN operations on the Health Clinic database
+* Retrieved patient, doctor, specialization, appointment, and billing details using multiple table joins
+* Identified patients and doctors without appointments using LEFT JOIN
+* Simulated FULL OUTER JOIN using UNION
+* Implemented SELF JOIN for hierarchical relationships
+* Generated Cartesian products using CROSS JOIN
+* Created and executed stored procedures with IN, OUT, and INOUT parameters
+* Implemented error handling using `DECLARE HANDLER`, `START TRANSACTION`, `COMMIT`, and `ROLLBACK`
+* Created triggers for validation, audit logging, automatic visit history creation, billing updates, and deletion restrictions
+* Solved SQL practice queries related to Joins, Stored Procedures, and Triggers
+
+#### 📂 Files
+
+* `Day-3/Day3.sql`
+
+#### 📌 Status
+
+**Completed ✅**
