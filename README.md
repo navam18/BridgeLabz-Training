@@ -140,3 +140,44 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 4 | 06-08-2026
+
+#### 📚 Topics Covered
+* JDBC (Java Database Connectivity) Fundamentals
+* JDBC Architecture & Driver Types
+* Connection URL, DriverManager, and `Connection` Object
+* `Statement` vs `PreparedStatement`
+* Preventing SQL Injection using `PreparedStatement`
+* `ResultSet` Navigation and Data Retrieval
+* Try-with-Resources for Automatic Resource Management
+* CRUD Operations via JDBC (`INSERT`, `SELECT`, `UPDATE`, `DELETE`)
+* DTO (Data Transfer Object) Design Pattern
+* DAO (Data Access Object) Design Pattern
+* Layered Application Architecture (UI → Service → DAO → DTO)
+* Transaction Management in JDBC (`setAutoCommit`, `commit`, `rollback`)
+* ACID Properties — Atomicity in Practice
+* Connection Pooling using HikariCP
+* Maven Project Setup & Dependency Management
+
+#### 💻 Practical Work
+* Built a complete **Health Clinic Management Console Application** in Java using JDBC + MySQL
+* Designed and implemented 6 DTO classes: `Patient`, `Doctor`, `Specialization`, `Appointment`, `Billing`, `VisitHistory`
+* Implemented `HikariConnectionPool` for pooled database connections, replacing a single-connection `DriverManager` setup
+* Built 6 DAO interface + implementation pairs with full CRUD operations using `PreparedStatement` and try-with-resources
+* Implemented `AppointmentService` as the transactional safety layer — coordinating appointment status updates, billing creation, and visit history logging as a single atomic transaction using shared connections, `commit()`, and `rollback()`
+* Built a full `ConsoleMenu` UI covering registration, search, update, and deletion for patients, doctors, specializations, appointments, billing, and visit history
+* Wired the entire layered architecture together via `Main.java`
+* Verified transaction rollback behavior by intentionally failing mid-transaction and confirming no partial data was saved
+* Set up the project as a Maven build with `mysql-connector-j` and `HikariCP` dependencies
+
+#### 📂 Files
+* `Day-4/HealthClinicApp/` (full Maven project)
+  * `pom.xml`
+  * `database/health_clinic_schema.sql`
+  * `src/main/java/com/clinic/` — `dto/`, `config/`, `dao/`, `service/`, `ui/`, `Main.java`
+
+#### 📌 Status
+**Completed ✅**
