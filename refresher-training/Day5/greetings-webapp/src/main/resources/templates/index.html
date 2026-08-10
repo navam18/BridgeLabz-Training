@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings Web App</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+    <div class="panel">
+        <h1>Welcome</h1>
+        <p>Tell us your name and we'll greet you.</p>
+        <form th:action="@{/greet}" method="get">
+            <input type="text" name="visitorName" placeholder="Enter your name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
