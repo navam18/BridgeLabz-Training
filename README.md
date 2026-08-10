@@ -92,7 +92,7 @@
 
 ---
 
-### ✅ Day 3 | 05-08-2026
+### ✅ Day 3 | 04-08-2026
 
 #### 📚 Topics Covered
 
@@ -143,7 +143,7 @@
 
 ---
 
-### ✅ Day 4 | 06-08-2026
+### ✅ Day 4 | 05-08-2026
 
 #### 📚 Topics Covered
 * JDBC (Java Database Connectivity) Fundamentals
@@ -180,4 +180,51 @@
   * `src/main/java/com/clinic/` — `dto/`, `config/`, `dao/`, `service/`, `ui/`, `Main.java`
 
 #### 📌 Status
+**Completed ✅**
+
+---
+
+### ✅ Day 5 | 06-08-2026
+
+#### 📚 Topics Covered
+
+* Introduction to Spring & Spring Boot
+* Inversion of Control (IoC) and the IoC Container
+* Dependency Injection (constructor, setter, field)
+* Spring Stereotype Annotations (`@Component`, `@Controller`, `@RestController`)
+* `@SpringBootApplication` — Auto Configuration, Component Scan, Configuration
+* Spring MVC Architecture
+* DispatcherServlet as the Front Controller
+* Request Mapping (`@RequestMapping`, `@GetMapping`, `@PostMapping`, `@PutMapping`)
+* Handling Request Data — `@RequestParam`, `@PathVariable`, `@RequestBody`
+* View Resolution using Thymeleaf
+* Embedded Tomcat in Spring Boot (no external server setup required)
+* SLF4J Logging in a Spring Boot Application
+
+#### 💻 Practical Work
+
+* Built **springapp** — a Spring Boot project demonstrating:
+  * A `HelloRestController` exposing five REST endpoints covering plain response, query parameter, path variable, request body, and PUT request handling
+  * A `HelloWebController` returning Thymeleaf views for a basic MVC flow
+  * `EmployeeBean` and `DepartmentBean` components wired together via constructor-based dependency injection, with wiring confirmed through SLF4J log output on startup
+* Built **greetings-webapp** — a focused Spring MVC application:
+  * `GreetingFormController` serving an input form (`index.html`) and a result page (`greeting.html`)
+  * Demonstrated the DispatcherServlet → Controller → Model → View flow end to end
+  * Styled with a custom stylesheet served from `static/css`
+* Verified both applications run on the Spring Boot **embedded Tomcat server** with no manual Tomcat installation or configuration
+* Confirmed successful startup and request handling for both projects via Maven (`mvn spring-boot:run`)
+
+#### 📂 Files
+
+* `Day-5/springapp/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/com/bridgelabz/springapp/` — `controller/`, `model/`, `component/`, `SpringAppApplication.java`
+  * `src/main/resources/templates/`, `application.properties`
+* `Day-5/greetings-webapp/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/com/bridgelabz/greetings/` — `controller/`, `GreetingsWebAppApplication.java`
+  * `src/main/resources/templates/`, `static/css/`, `application.properties`
+
+#### 📌 Status
+
 **Completed ✅**
