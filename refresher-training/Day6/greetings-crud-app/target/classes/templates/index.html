@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting Board</title>
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+</head>
+<body>
+    <div class="board">
+        <h1>Greeting Board</h1>
+
+        <form th:action="@{/notes}" method="post">
+            <input type="text" name="senderName" placeholder="Your name" required>
+            <input type="text" name="note" placeholder="Your message" required>
+            <button type="submit">Post greeting</button>
+        </form>
+
+        <ul class="note-list" th:if="${not #lists.isEmpty(notes)}">
+            <li th:each="n : ${notes}">
+                <a th:href="@{/notes/{id}(id=${n.id})}" th:text="${n.senderName} + ': ' + ${n.note}">Name: Note</a>
+                <span class="actions">
+                    <a th:href="@{/notes/{id}/edit(id=${n.id})}">Edit</a>
+                    <form th:action="@{/notes/{id}/delete(id=${n.id})}" method="post">
+                        <button type="submit" class="link-btn">Delete</button>
+                    </form>
+                </span>
+            </li>
+        </ul>
+        <p th:if="${#lists.isEmpty(notes)}">No greetings posted yet.</p>
+    </div>
+</body>
+</html>

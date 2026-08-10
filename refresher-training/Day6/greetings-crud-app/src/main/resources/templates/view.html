@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+</head>
+<body>
+    <div class="board">
+        <h1 th:text="'Hi ' + ${note.senderName} + '!'">Hi!</h1>
+        <p th:text="${note.note}">Note text</p>
+        <a th:href="@{/}">Back to board</a>
+    </div>
+</body>
+</html>

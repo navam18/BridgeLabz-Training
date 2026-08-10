@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Greeting</title>
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+</head>
+<body>
+    <div class="board">
+        <h1>Edit Greeting</h1>
+        <form th:action="@{/notes/{id}(id=${note.id})}" method="post">
+            <input type="text" name="senderName" th:value="${note.senderName}" required>
+            <input type="text" name="note" th:value="${note.note}" required>
+            <button type="submit">Save changes</button>
+        </form>
+        <a th:href="@{/}">Cancel</a>
+    </div>
+</body>
+</html>
