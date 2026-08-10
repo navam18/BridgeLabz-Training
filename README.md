@@ -273,3 +273,50 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 7 | 10-08-2026
+
+#### 📚 Topics Covered
+
+* Spring Boot REST API Design
+* RESTful CRUD Conventions (`@RestController`, `@RequestMapping`, `@PostMapping`, `@GetMapping`)
+* Spring Data JPA & Hibernate with a Layered Architecture (Controller → Service → Repository → Database)
+* Entity Modeling — `@Table` Indexes and Unique Constraints
+* DTO Pattern for Request/Response Separation
+* Bean Validation (`@NotBlank`, `@Email`) on Incoming Requests
+* Custom Exceptions and Centralized Error Handling with `@RestControllerAdvice`
+* Structured Error Responses (timestamp, status, error, message, path)
+* H2 In-Memory Database & H2 Console
+* Spring Boot Actuator for Health, Info, and Metrics Endpoints
+* HikariCP Connection Pool (Spring Boot default)
+
+#### 💻 Practical Work
+
+* Built **contact-directory-api** — a Spring Boot REST API for managing contacts:
+  * `ContactEntity` JPA entity with a unique constraint on phone number and email, and an index on full name
+  * `ContactCreateRequest` and `ContactResponse` DTOs keeping persistence and API contracts separate
+  * `ContactRepository` extending `JpaRepository`, with `existsByPhoneNumber` / `existsByEmailAddress` checks
+  * `ContactService` / `ContactServiceImpl` enforcing duplicate-phone and duplicate-email business rules before saving
+  * `ContactController` exposing:
+    * `POST /api/v1/contacts` — create a contact
+    * `GET /api/v1/contacts` — list all contacts
+    * `GET /api/v1/contacts/{id}` — fetch a contact by id
+  * `ContactNotFoundException`, `DuplicateContactException`, `ApiError`, and `GlobalRestExceptionHandler` for consistent, centralized error responses
+  * Bean Validation on the create request, with field-level error messages returned on invalid input
+* Configured an H2 in-memory database (`create-drop` schema mode) with the H2 console enabled at `/h2-console`
+* Enabled Spring Boot Actuator (`health`, `info`, `metrics`) for basic runtime observability
+* Verified create, list, and get-by-id flows, duplicate rejection, and validation error responses end to end
+
+#### 📂 Files
+
+* `Day-7/contact-directory-api/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/com/training/contactdirectory/` — `controller/`, `dto/`, `entity/`, `exception/`, `repository/`, `service/`, `ContactDirectoryApiApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/com/training/contactdirectory/ContactDirectoryApiApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
