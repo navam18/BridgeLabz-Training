@@ -92,7 +92,7 @@
 
 ---
 
-### ✅ Day 3 | 05-08-2026
+### ✅ Day 3 | 04-08-2026
 
 #### 📚 Topics Covered
 
@@ -143,7 +143,7 @@
 
 ---
 
-### ✅ Day 4 | 06-08-2026
+### ✅ Day 4 | 05-08-2026
 
 #### 📚 Topics Covered
 * JDBC (Java Database Connectivity) Fundamentals
@@ -184,7 +184,7 @@
 
 ---
 
-### ✅ Day 5 | 07-08-2026
+### ✅ Day 5 | 06-08-2026
 
 #### 📚 Topics Covered
 
