@@ -228,3 +228,48 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 6 | 07-08-2026
+
+#### 📚 Topics Covered
+
+* Spring Data JPA Fundamentals
+* JPA Entities — `@Entity`, `@Id`, `@GeneratedValue`
+* `JpaRepository` and Built-in CRUD Methods (`save`, `findAll`, `findById`, `deleteById`)
+* H2 In-Memory Database Setup and Configuration
+* `spring.jpa.hibernate.ddl-auto` and Schema Auto-Generation
+* H2 Console for Inspecting Runtime Data
+* Full CRUD Flow through Spring MVC (Create, Read, Update, Delete via Controller + Views)
+* Thymeleaf Iteration and Conditionals (`th:each`, `th:if`)
+* Redirect-after-POST Pattern (Post/Redirect/Get)
+* Handling "Not Found" Cases with `Optional` and `orElseThrow`
+
+#### 💻 Practical Work
+
+* Built **greetings-crud-app** — a Spring Boot project extending the Day 5 MVC flow with persistence:
+  * `GreetingNote` JPA entity representing a saved greeting (sender name + note)
+  * `GreetingNoteRepository` extending `JpaRepository` for zero-boilerplate CRUD access
+  * `GreetingBoardController` wiring up all five CRUD routes:
+    * `GET /` — list all saved greetings with the create form
+    * `POST /notes` — create a new greeting
+    * `GET /notes/{id}` — view a single greeting
+    * `GET /notes/{id}/edit` and `POST /notes/{id}` — edit form and save changes
+    * `POST /notes/{id}/delete` — delete a greeting
+  * Three Thymeleaf views (`index.html`, `view.html`, `edit.html`) driving the full CRUD UI
+  * Configured an H2 in-memory database with `spring.jpa.hibernate.ddl-auto=update` for automatic schema creation
+* Verified the app on the Spring Boot **embedded Tomcat server**, no manual server setup required
+* Inspected persisted rows at runtime using the built-in H2 console at `/h2-console`
+* Confirmed create, view, edit, and delete operations all work correctly end to end via `mvn spring-boot:run`
+
+#### 📂 Files
+
+* `Day-6/greetings-crud-app/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/com/bridgelabz/greetingsapp/` — `GreetingNote.java`, `GreetingNoteRepository.java`, `GreetingBoardController.java`, `GreetingsCrudAppApplication.java`
+  * `src/main/resources/templates/`, `static/css/`, `application.properties`
+
+#### 📌 Status
+
+**Completed ✅**
