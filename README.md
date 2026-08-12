@@ -311,9 +311,50 @@
 
 #### 📂 Files
 
-* `Day-7/contact-directory-api/` (full Maven project)
+* `Day-7/contactApp/` (full Maven project)
   * `pom.xml`
   * `src/main/java/com/training/contactdirectory/` — `controller/`, `dto/`, `entity/`, `exception/`, `repository/`, `service/`, `ContactDirectoryApiApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/com/training/contactdirectory/ContactDirectoryApiApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
+### ✅ Day 8 | 11-08-2026
+
+#### 📚 Topics Covered
+
+* Completing the RESTful CRUD Surface (`@PutMapping`, `@DeleteMapping`)
+* Separate DTO Contracts for Create vs Update Operations
+* Uniqueness Validation on Update — Excluding the Record's Own Id (`existsBy...AndIdNot`)
+* Not-Found Handling on Update and Delete (`orElseThrow`, `existsById`)
+* Idempotent Delete Semantics (`204 No Content`)
+* Extending Centralized Exception Handling to New Endpoints
+
+#### 💻 Practical Work
+
+* Extended **contact-directory-api** from Day 7 to a complete CRUD API by adding Update and Delete:
+  * `ContactUpdateRequest` DTO, kept separate from `ContactCreateRequest` for a clean request contract
+  * `ContactRepository` extended with `existsByPhoneNumberAndIdNot` / `existsByEmailAddressAndIdNot`, so updating a contact doesn't falsely collide with its own existing phone/email
+  * `ContactService` / `ContactServiceImpl` extended with:
+    * `updateContact(id, request)` — loads the existing contact, re-validates phone/email uniqueness against all other contacts, applies changes, and saves
+    * `deleteContact(id)` — verifies existence before deleting, raising `ContactNotFoundException` otherwise
+  * `ContactController` extended with:
+    * `PUT /api/v1/contacts/{id}` — update an existing contact
+    * `DELETE /api/v1/contacts/{id}` — delete a contact, returning `204 No Content`
+  * Reused the existing `ContactNotFoundException`, `DuplicateContactException`, `ApiError`, and `GlobalRestExceptionHandler` so update/delete errors follow the same structured error response as create/read
+  * Bean Validation applied to the update request as well, matching the create request's field-level error behavior
+* Verified update and delete flows end to end: updating with a duplicate phone/email is rejected, updating/deleting a missing id returns a `404`, and successful update/delete behave as expected
+* Contact Directory API now supports the full CRUD set: Create, Read (all + by id), Update, and Delete
+
+#### 📂 Files
+
+* `Day-8/contactApp/` (full Maven project, extends Day 7)
+  * `pom.xml`
+  * `src/main/java/com/training/contactdirectory/` — `controller/`, `dto/` (adds `ContactUpdateRequest.java`), `entity/`, `exception/`, `repository/`, `service/`, `ContactDirectoryApiApplication.java`
   * `src/main/resources/application.properties`
   * `src/test/java/com/training/contactdirectory/ContactDirectoryApiApplicationTests.java`
 
