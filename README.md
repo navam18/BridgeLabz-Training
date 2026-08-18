@@ -311,7 +311,7 @@
 
 #### 📂 Files
 
-* `Day-7/contactApp/` (full Maven project)
+* `Day-7/contact-directory-api/` (full Maven project)
   * `pom.xml`
   * `src/main/java/com/training/contactdirectory/` — `controller/`, `dto/`, `entity/`, `exception/`, `repository/`, `service/`, `ContactDirectoryApiApplication.java`
   * `src/main/resources/application.properties`
@@ -352,11 +352,57 @@
 
 #### 📂 Files
 
-* `Day-8/contactApp/` (full Maven project, extends Day 7)
+* `Day-8/contact-directory-api/` (full Maven project, extends Day 7)
   * `pom.xml`
   * `src/main/java/com/training/contactdirectory/` — `controller/`, `dto/` (adds `ContactUpdateRequest.java`), `entity/`, `exception/`, `repository/`, `service/`, `ContactDirectoryApiApplication.java`
   * `src/main/resources/application.properties`
   * `src/test/java/com/training/contactdirectory/ContactDirectoryApiApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
+### ✅ Day 9 | 12-08-2026
+
+#### 📚 Topics Covered
+
+* Building a Spring Boot CRUD API against a MySQL Database (instead of H2)
+* MySQL Datasource Configuration (`spring.datasource.url/username/password`)
+* JPA Entity Mapping without DTOs — Direct Entity Exposure over REST
+* Constructor-based Dependency Injection in Controller and Service layers
+* `spring.jpa.hibernate.ddl-auto=update` for Incremental Schema Evolution
+* Null-safe Lookups with `Optional.orElse(null)`
+* Basic Layered Architecture (Controller → Service → Repository → Entity)
+
+#### 💻 Practical Work
+
+* Built **student-management** — a Spring Boot REST API for managing students, backed by MySQL:
+  * `Student` JPA entity (`id`, `name`, `email`, `course`, `age`) with standard getters/setters
+  * `StudentRepository` extending `JpaRepository` for out-of-the-box persistence
+  * `StudentService` implementing the full CRUD set: `createStudent`, `getAllStudent`, `getStudentById`, `updateStudent`, `deleteStudent`
+  * `StudentController` exposing:
+    * `POST /students` — create a student
+    * `GET /students` — list all students
+    * `GET /students/{id}` — fetch a student by id
+    * `PUT /students/{id}` — update an existing student
+    * `DELETE /students/{id}` — delete a student
+  * Configured `application.properties` to connect to a local MySQL `student_db` database with `ddl-auto=update`
+* Verified create, list, get-by-id, update, and delete flows end to end against MySQL
+
+#### ⚠️ Notes
+
+* This project currently exposes the `Student` entity directly over REST (no DTOs) and has no bean validation or centralized exception handling yet — both are natural next steps, following the pattern established in the Day 7/8 `contact-directory-api`
+* `application.properties` has a MySQL password committed in plain text; recommend moving it to an environment variable or a git-ignored local properties file before pushing
+
+#### 📂 Files
+
+* `Day-9/studentManagement/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/com/example/student_management/` — `controller/`, `entity/`, `repository/`, `service/`, `StudentManagementApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/com/example/student_management/StudentManagementApplicationTests.java`
 
 #### 📌 Status
 
