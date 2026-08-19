@@ -407,3 +407,238 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 10 | 13-08-2026
+
+#### 📚 Topics Covered
+
+* Dependency Injection
+* Spring Boot key features
+* H2 Database integration and configuration
+* Circular Dependency
+
+#### 💻 Practical Work
+
+* Initialized **employee-payroll-app** as a Spring Boot project.
+* Configured Spring Boot with:
+  * Spring Data JPA
+  * Spring Web MVC
+  * H2 Database
+  * H2 Console
+  * Lombok
+* Configured the application to run on port `8080`.
+* The project currently contains the Spring Boot application class and test class; no employee payroll domain implementation is present in the Day-10 files.
+
+#### 📂 Files
+
+* `Day-10/employee_payroll_app/` (Spring Boot Maven project)
+  * `pom.xml`
+  * `src/main/java/org/example/employee_payroll_app/EmployeePayrollAppApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/employee_payroll_app/EmployeePayrollAppApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
+### ✅ Day 11 | 14-08-2026
+
+#### 📚 Topics Covered
+
+* Continued work with the **employee-payroll-app** Spring Boot project.
+* Spring Data JPA and H2 project configuration
+* Spring Boot application setup
+
+#### 💻 Practical Work
+
+* Continued the **employee-payroll-app** project from Day 10.
+* Maintained the Spring Boot Maven configuration with:
+  * Spring Data JPA
+  * Spring Web MVC
+  * H2 Database
+  * H2 Console
+  * Lombok
+* Kept the application configured to run on port `8080`.
+* The Day-11 files contain the project setup and application/test classes; the employee payroll implementation is introduced in the Day-12 version.
+
+#### 📂 Files
+
+* `Day-11/employee_payroll_app/` (Spring Boot Maven project)
+  * `pom.xml`
+  * `src/main/java/org/example/employee_payroll_app/EmployeePayrollAppApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/employee_payroll_app/EmployeePayrollAppApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
+### ✅ Day 12 | 17-08-2026
+
+#### 📚 Topics Covered
+
+* Building a complete Spring Boot Employee Payroll REST API
+* Layered Architecture:
+  * Controller
+  * Service
+  * Repository
+  * Entity
+  * DTO
+* Spring Data JPA with MySQL
+* DTO-based Request and Response handling
+* Bean Validation using `@Valid`, `@NotBlank`, and `@NotNull`
+* Custom Exception Handling
+* Centralized Exception Handling using `@RestControllerAdvice`
+* HTTP status handling using `ResponseEntity`
+* CRUD REST API operations
+* Transaction Management using `@Transactional`
+* Lombok and Builder Pattern
+* Salary calculation using `BigDecimal`
+* MySQL schema management using `spring.jpa.hibernate.ddl-auto=update`
+
+#### 💻 Practical Work
+
+* Built **employee-payroll-app** as a Spring Boot REST API connected to MySQL.
+* Created the `EmployeePayroll` JPA entity with:
+  * Employee ID
+  * Employee name
+  * Email
+  * Department
+  * Basic salary
+  * Allowances
+  * Deductions
+  * Net salary
+* Created separate request and response DTOs:
+  * `EmployeePayrollReqDTO`
+  * `EmployeePayrollResDTO`
+* Implemented `EmployeePayrollRepository` using `JpaRepository`.
+* Added employee CRUD operations through `EmployeePayrollService` and `EmployeePayrollServiceImpl`.
+* Implemented automatic net salary calculation:
+
+  `Net Salary = Basic Salary + Allowances - Deductions`
+
+* Created `EmployeePayrollController` with:
+  * `POST /api/employees` — create employee
+  * `GET /api/employees` — get all employees
+  * `GET /api/employees/{id}` — get employee by ID
+  * `PUT /api/employees/{id}` — update employee
+  * `DELETE /api/employees/{id}` — delete employee
+* Added `EmployeeNotFoundException` for missing employee records.
+* Added `GlobalExceptionHandler` for:
+  * Employee-not-found errors
+  * Validation errors
+  * General exceptions
+* Returned structured `ErrorResponse` objects containing timestamp, status, error, message, and path.
+* Configured MySQL database `employee_payroll_db` with JPA/Hibernate.
+* Enabled SQL logging and formatted Hibernate SQL output.
+
+#### 📂 Files
+
+* `Day-12/employee_payroll_app/` (full Maven project)
+  * `pom.xml`
+  * `src/main/java/org/example/employee_payroll_app/`
+    * `controller/EmployeePayrollController.java`
+    * `dto/EmployeePayrollReqDTO.java`
+    * `dto/EmployeePayrollResDTO.java`
+    * `entity/EmployeePayroll.java`
+    * `exception/EmployeeNotFoundException.java`
+    * `exception/ErrorResponse.java`
+    * `exception/GlobalExceptionHandler.java`
+    * `repository/EmployeePayrollRepository.java`
+    * `service/EmployeePayrollService.java`
+    * `service/EmployeePayrollServiceImpl.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/employee_payroll_app/EmployeePayrollAppApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
+### ✅ Day 13 | 18-08-2026
+
+#### 📚 Topics Covered
+
+* Spring Security
+* JWT-based Authentication
+* Stateless Authentication
+* JWT Authentication Filter
+* `SecurityFilterChain`
+* Password Hashing using `BCryptPasswordEncoder`
+* User Registration and Login
+* Role-based security foundations
+* `SecurityContextHolder`
+* `GrantedAuthority`
+* JPA Entity and Repository for Users
+* Authentication endpoint configuration
+* Public vs authenticated endpoints
+* Method-level security with `@EnableMethodSecurity`
+
+#### 💻 Practical Work
+
+* Started **fundoo-notes-app** as a Spring Boot security application.
+* Created a `User` JPA entity containing:
+  * User ID
+  * Email
+  * Password hash
+  * Name
+  * Role
+* Created a `Role` enum with:
+  * `USER`
+  * `ADMIN`
+* Implemented `UserRepository` with:
+  * `findByEmail`
+  * `existsByEmail`
+* Implemented `UserService` for:
+  * User registration
+  * Password hashing with BCrypt
+  * User login
+  * JWT generation
+* Implemented `JwtUtil` for:
+  * Generating JWT tokens
+  * Extracting user ID
+  * Extracting email
+  * Extracting role
+  * Validating JWT tokens
+* Implemented `JwtAuthenticationFilter` to:
+  * Read the `Authorization: Bearer <token>` header
+  * Validate the JWT
+  * Extract the user ID and role
+  * Create a Spring Security `Authentication`
+  * Store authentication in `SecurityContextHolder`
+* Configured `SecurityConfig` for stateless JWT authentication.
+* Configured authentication rules so registration, login, password recovery endpoints, and H2 console are permitted while other requests require authentication.
+* Enabled method-level security using `@EnableMethodSecurity`.
+
+#### ⚠️ Notes
+
+* The Day-13 source contains JWT utility/filter code and Spring Security configuration, but the provided `pom.xml` does not contain a JJWT dependency even though `JwtUtil` imports JJWT classes.
+* The provided Day-13 `application.properties` only contains `spring.application.name`; the JWT properties referenced by the code (`jwt.secret` and `jwt.expiration-ms`) are not present in the supplied file.
+* The supplied Day-13 project therefore represents the authentication/security implementation present in the ZIP, but additional configuration/dependencies may be required for the project to compile and run successfully.
+
+#### 📂 Files
+
+* `Day-13/fundoo_notes_app/` (Spring Boot Maven project)
+  * `pom.xml`
+  * `src/main/java/org/example/fundoo_notes_app/`
+    * `config/JwtAuthenticationFilter.java`
+    * `config/SecurityConfig.java`
+    * `entity/Role.java`
+    * `entity/User.java`
+    * `repository/UserRepository.java`
+    * `security/JwtUtil.java`
+    * `service/UserService.java`
+    * `FundooNotesAppApplication.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/fundoo_notes_app/FundooNotesAppApplicationTests.java`
+
+#### 📌 Status
+
+**Completed ✅**
