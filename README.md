@@ -747,3 +747,77 @@
 
 **Completed ✅**
 
+---
+
+### ✅ Day 15 | 20-08-2026
+
+#### 📚 Topics Covered
+
+* Continued work on the **fundoo-notes-app** Spring Boot security project.
+* Reviewed and maintained JWT-based authentication and authorization.
+* Continued role-based security using `USER` and `ADMIN`.
+* Continued password recovery and reset functionality.
+* Continued centralized exception handling.
+* Continued Spring Security configuration and protected API access.
+
+#### 💻 Practical Work
+
+* Continued the **fundoo-notes-app** project from Day 14.
+* Maintained the JWT authentication flow using:
+
+  * `JwtUtil`
+  * `JwtAuthenticationFilter`
+  * `SecurityConfig`
+* Maintained role-based authorization using Spring Security authorities.
+* Maintained the user authentication functionality with:
+
+  * User registration
+  * User login
+  * BCrypt password hashing
+  * JWT token generation and validation
+* Maintained the forgot-password and password-reset functionality using:
+
+  * `PasswordResetToken`
+  * `PasswordResetTokenRepository`
+  * `PasswordResetService`
+  * `JavaMailSender`
+* Maintained centralized exception handling through `GlobalExceptionHandler`.
+* Continued using `ResourceNotFoundException` and validation exception handling.
+* No new source-code changes are present in the Day-15 ZIP compared with the Day-14 version.
+
+#### 📂 Files
+
+* `Day-15/fundoo_notes_app/` (Spring Boot Maven project)
+
+  * `pom.xml`
+  * `src/main/java/org/example/fundoo_notes_app/`
+
+    * `config/JwtAuthenticationFilter.java`
+    * `config/SecurityConfig.java`
+    * `controller/AuthController.java`
+    * `dto/MessageResponse.java`
+    * `entity/PasswordResetToken.java`
+    * `entity/Role.java`
+    * `entity/User.java`
+    * `exception/GlobalExceptionHandler.java`
+    * `exception/ResourceNotFoundException.java`
+    * `repository/PasswordResetTokenRepository.java`
+    * `repository/UserRepository.java`
+    * `security/JwtUtil.java`
+    * `service/PasswordResetService.java`
+    * `service/UserService.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/fundoo_notes_app/FundooNotesAppApplicationTests.java`
+
+#### ⚠️ Notes
+
+* The Day-15 folder contains the same implementation as Day 14 in the supplied ZIP.
+* No additional Day-15 Java classes, endpoints, dependencies, or configuration changes were found in the ZIP.
+* Therefore, the Day-15 entry documents the continuation/review of the Day-14 implementation rather than claiming additional functionality that is not present in the source.
+
+#### 📌 Status
+
+**Completed ✅**
+
+---
+
