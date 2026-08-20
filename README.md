@@ -642,3 +642,108 @@
 #### 📌 Status
 
 **Completed ✅**
+
+---
+
+### ✅ Day 14 | 19-08-2026
+
+#### 📚 Topics Covered
+
+* JWT Authorization and Role-Based Access Control
+* User Roles using `USER` and `ADMIN`
+* Adding Roles as JWT Claims
+* Mapping JWT Roles to Spring Security `GrantedAuthority`
+* `SimpleGrantedAuthority` and `ROLE_` Prefix
+* Role-based Authentication using `SecurityContextHolder`
+* Spring Security `SecurityFilterChain` with protected endpoints
+* Password Recovery / Forgot Password Flow
+* Password Reset using Short-Lived Tokens
+* Single-Use Password Reset Tokens
+* Sending Password Reset Emails using `JavaMailSender`
+* Password Hashing using `BCryptPasswordEncoder`
+* JPA Entity and Repository for Password Reset Tokens
+* Centralized Exception Handling using `@RestControllerAdvice`
+* Validation Error Handling with `MethodArgumentNotValidException`
+* Custom `ResourceNotFoundException`
+* Secure password recovery response to prevent email enumeration
+
+#### 💻 Practical Work
+
+* Continued the **fundoo-notes-app** Spring Boot security project from Day 13.
+* Enhanced the `User` entity by adding a `Role` field with:
+
+  * `USER`
+  * `ADMIN`
+* Updated JWT generation to include the user's role as a claim along with the user ID and email.
+* Updated `JwtAuthenticationFilter` to:
+
+  * Read the JWT from the `Authorization: Bearer <token>` header
+  * Validate the token
+  * Extract the user ID and role
+  * Convert the role into a Spring Security `GrantedAuthority`
+  * Store the authenticated user inside `SecurityContextHolder`
+* Configured `SecurityConfig` for stateless JWT-based authorization.
+* Kept authentication endpoints such as registration, login, forgot-password, and reset-password publicly accessible while protecting other endpoints.
+* Enabled method-level security using `@EnableMethodSecurity`.
+* Implemented the complete **Forgot Password / Reset Password** flow:
+
+  * Created `PasswordResetToken` JPA entity
+  * Added a unique reset token, user ID, expiry time, and used-status
+  * Created `PasswordResetTokenRepository`
+  * Implemented `PasswordResetService`
+  * Generated random password reset tokens using `UUID`
+  * Added configurable token expiry
+  * Sent password reset links using `JavaMailSender`
+  * Prevented password reset tokens from being reused
+  * Validated token expiry before allowing a password change
+  * Updated the user's password using BCrypt hashing
+* Added new authentication endpoints:
+
+  * `POST /auth/forgot-password` — request a password reset
+  * `POST /auth/reset-password` — reset the password using a valid token
+* Implemented `GlobalExceptionHandler` using `@RestControllerAdvice` for centralized error handling.
+* Added handling for:
+
+  * `IllegalArgumentException`
+  * `ResourceNotFoundException`
+  * `MethodArgumentNotValidException`
+  * General exceptions
+* Added `MessageResponse` DTO for clean API responses.
+* Configured the project with Spring Boot Mail support for password recovery.
+
+#### 📂 Files
+
+* `Day-14/fundoo_notes_app/` (Spring Boot Maven project)
+
+  * `pom.xml`
+  * `src/main/java/org/example/fundoo_notes_app/`
+
+    * `config/JwtAuthenticationFilter.java`
+    * `config/SecurityConfig.java`
+    * `controller/AuthController.java`
+    * `dto/MessageResponse.java`
+    * `entity/PasswordResetToken.java`
+    * `entity/Role.java`
+    * `entity/User.java`
+    * `exception/GlobalExceptionHandler.java`
+    * `exception/ResourceNotFoundException.java`
+    * `repository/PasswordResetTokenRepository.java`
+    * `repository/UserRepository.java`
+    * `security/JwtUtil.java`
+    * `service/PasswordResetService.java`
+    * `service/UserService.java`
+  * `src/main/resources/application.properties`
+  * `src/test/java/org/example/fundoo_notes_app/FundooNotesAppApplicationTests.java`
+
+#### ⚠️ Notes
+
+* The Day-14 project contains the implementation for JWT role-based authorization and password recovery.
+* Password reset tokens are designed to be short-lived and single-use.
+* The password reset email uses a frontend reset URL placeholder (`your-frontend.example.com`), so it would need to be replaced with the actual frontend URL in a deployed application.
+* The supplied `application.properties` only contains the application name and server port; JWT and email-related properties referenced by the code are not configured in the provided file.
+* The project includes the required JJWT and Spring Boot Mail dependencies in `pom.xml`.
+
+#### 📌 Status
+
+**Completed ✅**
+
